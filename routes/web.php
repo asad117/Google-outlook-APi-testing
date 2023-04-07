@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OutlookApiController;
 use App\Http\Controllers\GoogleAPIController;
-use App\Http\Controllers\GoogleController;
+// use App\Http\Controllers\GoogleController;
 
 
 
@@ -28,9 +28,9 @@ Route::get('/outlook', [OutlookApiController::class, 'index']);
 Route::get('/google', [GoogleAPIController::class, 'fetchEmails']);
 
 
-Route::get('/googleoauth', [GoogleController::class, 'index']);
+// Route::get('/googleoauth', [GoogleController::class, 'index']);
 
-Route::get('/googlelabel', [GoogleController::class, 'listLabels']);
+// Route::get('/googlelabel', [GoogleController::class, 'listLabels']);
 
 
 
